@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">管理系统</string>
+    <string name="action_settings">设置</string>
+    <string name="insert">插入</string>
+    <string name="delete">删除</string>
+    <string name="title_activity_insert">插入</string>
+    <string name="name">期刊名称</string>
+	<string name="date">到货日期</string>
+	<string name="datesimple">2015/12/24</string>
+	<string name="ok">确定</string>
+	
+</resources>

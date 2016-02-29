@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/title" />
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="100sp"
+        android:layout_height="50sp"
+        android:layout_alignBottom="@id/title"
+        android:layout_marginBottom="48dp"
+        android:layout_marginLeft="44dp"
+        android:background="@drawable/btncon"
+        android:text="@string/insert"
+        android:textColor="@drawable/btn_color" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="100sp"
+        android:layout_height="50sp"
+        android:layout_alignBaseline="@id/insert"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="44dp"
+        android:background="@drawable/btncon"
+        android:text="@string/delete"
+        android:textColor="@drawable/btn_color" />
+
+    <LinearLayout
+        android:id="@+id/colname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        android:textSize="20sp" >
+
+        <TextView
+            android:id="@+id/qkmc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/rq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/date"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"         
+        android:layout_below="@id/colname"
+        />
+
+</RelativeLayout>
